@@ -4,7 +4,6 @@ from rest_framework.parsers import JSONParser
 from django.http.response import JsonResponse
 from basics.models import Student
 from basics.serializers import StudentSerializer
-from django.core.files.storage import default_storage
 
 @csrf_exempt
 def StudentApi(request,id=None):
