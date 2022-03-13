@@ -44,5 +44,5 @@ def StudentApi(request,id=None):
     elif request.method=='DELETE':
         student=Student.objects.get(StudentId=id)
         student.delete()
-        return JsonResponse("Deleted Sucessfully", safe=False)   
+        return JsonResponse("Deleted Sucessfully")   
 
